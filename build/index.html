@@ -3,9 +3,154 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sawco gadgets | San Diego, Calif.</title>
+    <title>sawco devices | San Diego, Calif.</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./main.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../src/scripts/main.js" charset="utf-8"></script>
   </head>
   <body>
 
+    <section id="landing-banner">
+      <nav class="nav">
+        <ul class="table-row center">
+          <a href="#about-container"><li>How It Works</li></a>
+          <a href="#offers-container"><li>Common Offers Guide</li></a>
+          <a href="#evaluation-container"><li>Evaluation Form</li></a>
+        </ul>
+      </nav>
+      <div class="abso-center">
+        <h1 class="white">sawco</h1>
+        <hr>
+        <h1 class="white">DEVICES</h1>
+        <p class="white text-center">buy &nbsp; &#9679; &nbsp; sell &nbsp; &#9679; &nbsp; san diego, calif.</p>
+      </div>
+    </section>
+
+    <main>
+      <section id="about-container">
+        <div class="container">
+          <h2>How It Works</h2>
+          <p>We're a small company located in the heart of North Park. What do we do? We ride bicycles to you, check out your device and buy it. How does it work? Easy as just filling out the form below. We'll check out your submission and then get right back to you. All portable devices regardless of condition are considered. How do we pay for the devices? For evryones safety, we prefer to pay on the spot via Venmo or Paypal. If cash is your thing, we ask you meet us at the closest Chase bank and we withdrawl the money from the teller. We love the environment and if needed we can properly recycle any of your unwanted devices for free.</p>
+
+          <p>We focus on proudly and promptly serving the neighborhoods around Balboa Park. <small>All of San Diego is considered, just might take us a little longer to get there.</small></p>
+
+          <p>Reguardless, thanks for checking us out and cheers!</p>
+        </div>
+      </section>
+
+      <section id="offers-container">
+        <div class="container">
+          <h2>Common Offers Guide</h2>
+          <p>These are ballpark prices based on devices in good to great condition. Prices are updated often and don’t worry, we're fair with our evaluations.</p>
+
+          <nav class="nav">
+            <ul class="table-row center">
+              <li class="selected" data-category="phone">Phones</li>
+              <li data-category="tablet">Tablets</li>
+            </ul>
+          </nav>
+
+          <div class="table-row items">
+            <div class="col-2">
+              <div class="table-row" data-type="phone">
+                <div class="item">iPhone 5</div>
+                <div class="price">$50</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">iPhone 6</div>
+                <div class="price">$80</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">iPhone 6+</div>
+                <div class="price">$100</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">iPhone 7</div>
+                <div class="price">$200</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">iPhone 7+</div>
+                <div class="price">$220</div>
+              </div>
+
+              <div class="table-row" data-type="phone">
+                <div class="item">LG g4</div>
+                <div class="price">$50</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">LG g5</div>
+                <div class="price">$80</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">LG g6</div>
+                <div class="price">$100</div>
+              </div>
+
+              <div class="table-row" data-type="tablet">
+                <div class="item">iPad</div>
+                <div class="price">$100</div>
+              </div>
+            </div>
+
+            <div class="col-2 items">
+              <div class="table-row" data-type="phone">
+                <div class="item">Smasung Galaxy s3</div>
+                <div class="price">$50</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">Smasung Galaxy s4</div>
+                <div class="price">$80</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">Smasung Galaxy s5</div>
+                <div class="price">$100</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">Smasung Galaxy s6</div>
+                <div class="price">$200</div>
+              </div>
+              <div class="table-row" data-type="phone">
+                <div class="item">Smasung Galaxy s7</div>
+                <div class="price">$220</div>
+              </div>
+            </div>
+          </div>
+          <p>Don't see your device on this list? No problem, just let us know what ya got on the form below.</p>
+        </div>
+      </section>
+
+      <section class="form container" id="evaluation-container">
+        <h2>Evaluation Form</h2>
+        <form action="#">
+          <input type="text" name="name" class="half margin-right" value="" placeholder="full name">
+          <input type="tel" name="tel" value="" class="half" placeholder="phone number">
+
+          <input type="text" name="make" value="" class="full" placeholder="device make/model">
+          <select class="select full" name="condition">
+            <option value="" disabled selected>device's condition</option>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+          </select>
+
+          <textarea name="details" rows="8" class="full" placeholder="any notable damage to the device? i.e. cracked screen, wont charge, broken touch sensors?"></textarea>
+
+          <small>* All sales will require a signed bill of sale (provided by us) and verified I.D. We don't want to help and/or promote stolen items in anyway. What goes around comes around and we're all about good vibes.</small>
+
+          <input type="submit" class="btn" value="Submit">
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer" class="table-row">
+      <div class="col-2">
+        * prices subject to change
+      </div>
+      <div class="col-2 text-right">
+        copyright 2017
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,2 +1,87 @@
 // compileCompressed: ../../build/main.min.css;
 @import "./partials/_globals";
+
+#landing-banner {
+  background: url('../img/phone1.jpg') no-repeat center center fixed / cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .nav {
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .abso-center {
+    border: 1rem solid #fff;
+    padding: 2rem 4rem 1rem;
+  }
+}
+
+#offers-container {
+  background: url('../img/phone3.jpg') no-repeat center center fixed / cover;
+  margin: 2rem 0;
+  padding: 4rem 2rem;
+  color: #fff;
+
+  .container {
+    background: #fff;
+    color: #333;
+    width: 80%;
+    padding: 2rem 4rem 4rem;
+  }
+
+  ul {
+    margin: 2rem 0 !important;
+  }
+
+  li {
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+    border-bottom: .2rem solid #fff;
+    transition: $ease;
+
+    &.selected {
+      background: $blue;
+      color: #fff;
+      border-bottom: .2rem solid #168ac3;
+
+      &:hover {
+        background: $blue;
+      }
+    }
+
+    &:hover {
+      background: rgba(25,154,217,.5);
+      border-bottom: .2rem solid rgba(25,154,217,.5);
+      cursor: pointer;
+    }
+  }
+
+  .table-row {
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+  }
+
+  .item {
+    flex: 3;
+  }
+
+  .price {
+    flex: 1;
+  }
+
+  .dark-bg {
+    background: rgb(225,225,225);
+  }
+}
+
+#footer {
+  padding: 1rem 4rem;
+  border-top: 1px solid rgba(80,80,80,.5);
+  color: rgba(80,80,80,.5);
+}
